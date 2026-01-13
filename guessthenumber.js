@@ -1,11 +1,11 @@
 let randomNumber =(parseInt(Math.random()*100 + 1));
 
-const submit = document.querySelector('#subt')
-const userInput = document.querySelector('#guessField')
-const guessSlot = document.querySelector('.guesses')
-const remaining = document.querySelector('.lastResult')
-const lowOrHi = document.querySelector('.lowOrHi')
-const startOver = document.querySelector('.resultParas')
+const submit = document.querySelector('#subt')// submit guess box
+const userInput = document.querySelector('#guessField')// input box
+const guessSlot = document.querySelector('.guesses')// previouse guesses
+const remaining = document.querySelector('.lastResult')// remaining guesses
+const lowOrHi = document.querySelector('.lowOrHi')// last paragraph
+const startOver = document.querySelector('.resultParas')// correct number is type box
 
 const p = document.createElement('p')
 
@@ -13,6 +13,7 @@ let prevGuess = []
 let numGuess = 1
 
 let playGame = true;
+
 if(playGame){
     submit.addEventListener('click',function(e){
         e.preventDefault()
